@@ -1,0 +1,155 @@
+{
+  "info": {
+    "_postman_id": "0a9bb785-7e48-452c-8fb7-95c8ef161c58",
+    "name": "Luz Cidadã",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57954318",
+    "_collection_link": "https://go.postman.co/collection/57954318-0a9bb785-7e48-452c-8fb7-95c8ef161c58?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Criar Categoria",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Lâmpada com oscilação\",\r\n  \"descricao\": \"Luz está piscando e não está funcionando corretamente\",\r\n  \"ativa\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "categorias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Categoria",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080//api/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "",
+            "api",
+            "categorias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Usuário",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Marcos Silva\",\r\n  \"email\": \"maarcos@email.com\",\r\n  \"senhaHash\": \"senha123\",\r\n  \"telefone\": \"19955949999\",\r\n  \"tipoUsuario\": \"TECNICO\",\r\n  \"ativo\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Usuário",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar Ocorrência",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"moradorId\": \"1\",\r\n  \"categoriaId\": \"1\",\r\n  \"titulo\": \"Poste com lâmpada defeituosa\",\r\n  \"descricao\": \"O poste está com a lâmpada defeituosa há três dias.\",\r\n  \"endereco\": \"Rua das Flores, 100\",\r\n  \"bairro\": \"Centro\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/ocorrencias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "ocorrencias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Ocorrências",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Ocorrências pelo ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
